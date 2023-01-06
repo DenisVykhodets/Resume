@@ -7,33 +7,43 @@
     <title>HTML Course!</title>
     <meta name="keywords" content="Html,tags,learning html,cv, resume">
     <meta name="description" content="Это мой сайт-резюме ">
+    <link rel="stylesheet" href="styles.css">
 
 </head>
 <body>
-    <img src="avatar.jpg" alt="Деонис Выходец" width="350">
-    <h1>Деонис Выходец</h1>
-    <p> <strong>  Я музыкант </strong>, играю на муз.инструменте.</p> 
-    <p>Учу <em> язык програмирования(разметки)</em> </p>
+    <div class="container">
+    <div class="info"> 
+        <img src="avatar.jpg" alt="Деонис Выходец" class="avatar">
 
-    <h4>Список социальных сетей:</h4>
-    <a href="https://www.instagram.com/vykhodets_denis/" target="_blank">Instagram</a>
-    |
-    <a href="https://t.me/LYMIX21" target="_blank">Telegram</a>
-    |
-    <a href="https://vk.com/id564349174" target="_blank">VK</a>
+        <div class="info-text"> 
+        <h1>Деонис Выходец</h1>
+        <p> <strong>  Я веб-разработчик. </strong> </p> 
+        <p>Учу <em> язык програмирования(разметки)</em> </p>
 
+        <h4>Список социальных сетей:</h4>
+        <a href="https://www.instagram.com/vykhodets_denis/" target="_blank">Instagram</a>
+        |
+        <a href="https://t.me/LYMIX21" target="_blank">Telegram</a>
+        |
+        <a href="https://vk.com/id564349174" target="_blank">VK</a>
+    </div>
+    </div>
+        
+    <div class="card bg-blue">
     <h2>Мои хобби</h2>
 
-    <ol>
+    <ol class="list">
         <li>Путешествия</li>
-        <li>Рисование</li>
+        <li>Музыка</li>
         <li>Спорт</li>
         <li>Баскетбол</li>
     </ol>
+    </div>
+    <div class="card bg_red">
 
     <h2>Опыт работы</h2>
 
-    <table>
+    <table class="table">
         <thead>
             <tr>
                 <th>Название</th>
@@ -50,40 +60,43 @@
             <tr>
                 <td>Музыка</td>
                 <td>Институт</td>
-                <td>2022</td>
+                <td>2022-сейчас</td>
             </tr>
             <tr>
                 <td>Разработка</td>
                 <td>Frontend</td>
-                <td>2022</td>
+                <td>2022-сейчас</td>
             </tr>
         </tbody>
     </table>
+    </div>
 
-    <h2>Связаться со мной</h2>
+    <form action="/" class="form">
+        <h2>Связаться со мной</h2>
 
-    <form action="/">
-        <div>
+        <div class="form-row">
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="text" id="name"
             placeholder="Введите имя">
         </div>
 
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
             <input type="email" id="email"
             placeholder="Введите email">
         </div>
+    </div>
 
-        <div>
+        <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br>
             <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
             
         </div>
 
-        <input type="submit" value="Отправить!">
+        <input class="btn" type="submit" value="Отправить!">
     </form>
+</div>
 
 </body>
 </html>
